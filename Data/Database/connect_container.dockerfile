@@ -1,0 +1,1 @@
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Dotnet-RPG" -p 56662:1433 -v dotnet-rpg-sqlserver:/var/opt/mssql --name "dotnet-rpg-sqlserver" --hostname "dotnet-rpg-sqlserver" -d "mcr.microsoft.com/mssql/server"

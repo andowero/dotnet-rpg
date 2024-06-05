@@ -1,0 +1,16 @@
+USE master;
+GO
+CREATE LOGIN dotnetRPG   
+   WITH PASSWORD = 'd0tnetRPG',  
+   DEFAULT_DATABASE = DotnetRPG,
+   DEFAULT_LANGUAGE = english
+GO
+
+USE DotnetRPG;
+GO
+
+--CREATE USER dotnetRPG FOR LOGIN dotnetRPG;
+
+GO
+
+ALTER ROLE db_owner ADD MEMBER dotnetRPG;
